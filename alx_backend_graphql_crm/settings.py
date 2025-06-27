@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "graphene_django",
+    "crm",
 ]
 
 MIDDLEWARE = [
@@ -97,6 +99,10 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
+
+GRAPHENE = {
+    "SCHEMA": "alx_backend_graphql_crm.schema.schema"  
+}
 
 
 # Internationalization
