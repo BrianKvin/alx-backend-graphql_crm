@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-rxkg10ak+zl-kygstdns229)9oheg3okl0)^)g156(#uko9&1w"
+SECRET_KEY = "django-insecure-nj*)psn7uxi902zylj$!v64hbn0&1^b1%*nga$&3vlszqn*km+"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -68,6 +68,10 @@ TEMPLATES = [
     },
 ]
 
+GRAPHENE = {
+    "SCHEMA": "alx_backend_graphql_crm.schema.schema"  
+}
+
 WSGI_APPLICATION = "alx_backend_graphql_crm.wsgi.application"
 
 
@@ -99,10 +103,6 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
-
-GRAPHENE = {
-    "SCHEMA": "alx_backend_graphql_crm.schema.schema"  
-}
 
 
 # Internationalization
